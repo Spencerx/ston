@@ -1,6 +1,1 @@
-SystemOrganization addCategory: #'STON-Tests'!
-SystemOrganization addCategory: #'STON-Tests-Facade'!
-SystemOrganization addCategory: #'STON-Tests-Reader'!
-SystemOrganization addCategory: #'STON-Tests-Support'!
-SystemOrganization addCategory: #'STON-Tests-Write-Read'!
-SystemOrganization addCategory: #'STON-Tests-Writer'!
+self packageOrganizer ensurePackage: #'STON-Tests' withTags: #(#Facade #Reader #Support #'Write-Read' #Writer)!
