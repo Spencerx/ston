@@ -1,4 +1,1 @@
-SystemOrganization addCategory: #'STON-Core'!
-SystemOrganization addCategory: #'STON-Core-Facade'!
-SystemOrganization addCategory: #'STON-Core-Reader'!
-SystemOrganization addCategory: #'STON-Core-Writer'!
+self packageOrganizer ensurePackage: #'STON-Core' withTags: #(#Facade #Reader #Writer)!
