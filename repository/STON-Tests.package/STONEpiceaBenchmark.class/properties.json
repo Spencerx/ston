@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "2026-01-19T15:25:20.257944+01:00",
+	"super" : "Object",
+	"category" : "STON-Tests-Benchmarks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dataset",
+		"factor"
+	],
+	"name" : "STONEpiceaBenchmark",
+	"type" : "normal"
+}
