@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "2026-02-23T14:26:40.129497+01:00",
+	"super" : "STONTestDomainObject",
+	"category" : "STON-Tests-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "STONTestDomainObjectUsingAccessors",
+	"type" : "normal"
+}

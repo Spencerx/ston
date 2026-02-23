@@ -1,0 +1,1 @@
+I am like my superclass but I prefer STON uses accessors to manipulate my slots / instance variables.
