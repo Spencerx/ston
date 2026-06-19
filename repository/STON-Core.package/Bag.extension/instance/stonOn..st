@@ -4,4 +4,4 @@ stonOn: stonWriter
 
 	stonWriter
 		writeObject: self
-		do: [ stonWriter encodeMap: contents ]
+		do: [ stonWriter encodeMap: self contents ]
