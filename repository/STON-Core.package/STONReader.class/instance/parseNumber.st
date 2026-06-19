@@ -13,7 +13,7 @@ parseNumber
 			(readStream peekFor: $.)
 				ifTrue: [ number := number + self parseNumberFraction. isFloat := true ].
 			((readStream peekFor: $e) or: [ readStream peekFor: $E ])
-				ifTrue: [ number := number * self parseNumberExponent ].
+				ifTrue: [ number := number * self parseNumberExponent. isFloat := true ].
 			isFloat
 				ifTrue: [ number := number asFloat ] ].
 	negated
