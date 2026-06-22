@@ -16,7 +16,7 @@ stonOn: stonWriter
 				self offset hours abs printOn: out base: 10 length: 2 padded: true.
 				out nextPut: $:.
 				self offset minutes abs printOn: out base: 10 length: 2 padded: true.
-				self offset seconds = 0
-					ifFalse:[
-						out nextPut: $:; print: self offset seconds abs truncated ] ] ].
+				out nextPut: $:.
+				self offset seconds abs truncated printOn: out base: 10 length: 2 padded: true ] ].
+
 	stonWriter writeObject: self listSingleton: representation
