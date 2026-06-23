@@ -1,10 +1,13 @@
 writing
 writeObject: anObject
 	| instanceVariableNames |
-	(instanceVariableNames := anObject class stonAllInstVarNames) isEmpty
-		ifTrue: [
+	instanceVariableNames := anObject stonUseAccessors 
+		ifTrue: [ anObject class allInstVarNames ]
+		ifFalse: [ anObject class stonAllInstVarNames ].
+	instanceVariableNames
+		ifEmpty: [
 			self writeObject: anObject do: [ self encodeMap: #() ] ]
-		ifFalse: [
+		ifNotEmpty: [
 			self writeObject: anObject streamMap: [ :dictionary |
 				instanceVariableNames do: [ :each |
 					(anObject stonUseAccessors 
